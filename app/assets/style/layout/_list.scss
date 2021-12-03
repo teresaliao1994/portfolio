@@ -1,0 +1,10 @@
+.event__list {
+  li {
+    margin-bottom: 48px;
+  }
+  @include media-breakpoint-up(xxl) {
+    li {
+      margin-bottom: 64px;
+    }
+  }
+}

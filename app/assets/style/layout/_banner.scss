@@ -1,0 +1,23 @@
+.banner {
+  height: 360px;
+  @include media-breakpoint-up(xl) {
+    height: 500px;
+  }
+  @include media-breakpoint-up(xxl) {
+    height: 700px;
+  }
+}
+.eventBanner {
+  background: url("../../../assets/images/event-BN.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.title {
+  text-align: right;
+  border-bottom: $primary 1px solid;
+}
+.info {
+  letter-spacing: 0.15rem;
+  font-weight: 500;
+}

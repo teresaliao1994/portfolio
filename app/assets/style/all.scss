@@ -1,6 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Spartan:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+@import "./helpers/base";
+@import "./helpers/util";
 
-@import './layout/index.scss'
+@import "./layout/layout";
+@import "./layout/banner";
+@import "./layout/list";
+
+@import "./pages/index";
+@import "./pages/webapp";
+@import "./pages/graphics";

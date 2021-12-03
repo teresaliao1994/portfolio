@@ -1,0 +1,91 @@
+.indexBanner {
+  background: url("../../../assets/images/home-bn.png");
+  //background: url("../../../assets/images/ricardo-gomez-angel-UrOZTfXT0h0-unsplash\ \(1\).jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.intro__content {
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: "Italiana", serif;
+  text-align: center;
+}
+
+.constant-width-to-height-ratio {
+  width: 100%;
+}
+.constant-width-to-height-ratio::before {
+  content: "";
+  padding-top: 100%;
+  float: left;
+}
+.constant-width-to-height-ratio::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.portfolio {
+  .portfolio__content {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+  .portfolio__image {
+    width: 300px;
+    height: 300px;
+    @include media-breakpoint-up(md) {
+      width: 330px;
+      height: 330px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 400px;
+      height: 400px;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 450px;
+      height: 450px;
+    }
+    @include media-breakpoint-up(xxl) {
+      width: 500px;
+      height: 500px;
+    }
+  }
+  .portfolio__webapp {
+    background-image: url("../../../assets/images/cover-webapp.png");
+    background-size: cover;
+    background-position: center;
+    .portfolio__button {
+      border-radius: 100%;
+    }
+  }
+  .portfolio__graphics {
+    background-image: url("../../../assets/images/cover-graphics.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .portfolio__button {
+    height: 100%;
+    background-color: rgba(138, 136, 123, 0.5);
+    background-blend-mode: overlay;
+    font-family: "Italiana", serif;
+    //transition: all 0.2s ease-in;
+    .portfolio__link {
+      letter-spacing: 0.05em;
+      line-height: 1.5;
+      color: white;
+      border-bottom: 2px solid white;
+    }
+    &:hover {
+      background-color: rgba(138, 136, 123, 0);
+      .portfolio__link {
+        color: $dark;
+        border-bottom: 2px solid $dark;
+      }
+    }
+  }
+  .portfolio__info {
+    line-height: 2;
+  }
+}
