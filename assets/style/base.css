@@ -1,0 +1,9 @@
+:root {
+  --primary: Aquamarine;
+  --path: url("/assets/images/footer.png");
+}
+
+body {
+  background-image: var(--path);
+  background-color: var(--primary);
+}
