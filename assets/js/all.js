@@ -17,15 +17,18 @@ function menuScrollInit() {
 
 
 window.addEventListener("scroll", menuScrollInit);
-var $grid = $('.grid').masonry({
-  itemSelector: '.grid-item',
-  percentPosition: true,
-  columnWidth: '.grid-sizer'
-}); // layout Masonry after each image loads
 
-$grid.imagesLoaded().progress(function () {
-  $grid.masonry();
-}); //Aos
+$(document).ready(function () {
+  var $grid = $('.grid');
+  $grid.imagesLoaded().progress(function () {
+    $grid.masonry({
+      itemSelector: '.grid-item',
+      percentPosition: true,
+      columnWidth: '.grid-sizer'
+    }); // layout Masonry after each image loads
+  }); //Aos
+});
+
 
 AOS.init({
   once: true,
