@@ -17316,11 +17316,10 @@ h1, .h1,
 .h5, h6, .h6,
 .h6 {
   margin-bottom: 0;
-  line-height: 1.5;
+  font-family: "Italiana", serif;
 }
 
-h1, .h1, h2, .h2, h3, .h3 {
-  font-family: "Italiana", serif;
+h1, .h1, h2, .h2 {
   letter-spacing: 0.06em;
 }
 
@@ -17328,8 +17327,20 @@ h1, .h1 {
   font-size: 1.875rem;
 }
 
+@media (min-width: 992px) {
+  h1, .h1 {
+    line-height: 1.5;
+  }
+}
+
 h2, .h2 {
   font-size: 3.5rem;
+}
+
+@media (min-width: 992px) {
+  h2, .h2 {
+    font-size: 4rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -17344,29 +17355,43 @@ h2, .h2 {
   }
 }
 
+h3, .h3 {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 1400px) {
+  h3, .h3 {
+    font-size: 4rem;
+  }
+}
+
 .subtitle {
   letter-spacing: 0.25rem;
   font-weight: 600;
 }
 
-.font-s {
+.font-xs {
   font-size: 0.75rem;
 }
 
 @media (min-width: 1400px) {
+  .font-xs {
+    font-size: 1rem;
+  }
+}
+
+.font-s {
+  font-size: 0.875rem;
+}
+
+@media (min-width: 1200px) {
   .font-s {
     font-size: 1rem;
   }
 }
 
 .font-m {
-  font-size: 0.875rem;
-}
-
-@media (min-width: 1200px) {
-  .font-m {
-    font-size: 1rem;
-  }
+  font-size: 1rem;
 }
 
 .font-l {
@@ -17399,9 +17424,15 @@ h2, .h2 {
   font-weight: 500;
 }
 
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 860px;
+  }
+}
+
 @media (min-width: 1200px) {
   .wrapper {
-    max-width: 990px;
+    max-width: 1040px;
   }
 }
 
@@ -17413,10 +17444,6 @@ h2, .h2 {
 
 .nav__bar {
   background-color: #b39c7a;
-}
-
-.nav__bar h1, .nav__bar .h1 {
-  line-height: 1.5;
 }
 
 @media (min-width: 768px) {
@@ -17579,25 +17606,19 @@ h2, .h2 {
   text-align: center;
 }
 
-.constant-width-to-height-ratio {
-  width: 100%;
-}
-
-.constant-width-to-height-ratio::before {
-  content: "";
-  padding-top: 100%;
-  float: left;
-}
-
-.constant-width-to-height-ratio::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 .portfolio .portfolio__content {
   max-width: 1120px;
   margin: 0 auto;
+}
+
+.portfolio .portfolio__content li:nth-child(2) {
+  background-color: #1a1a1a;
+}
+
+@media (min-width: 768px) {
+  .portfolio .portfolio__content li:nth-child(2) {
+    background-color: inherit;
+  }
 }
 
 .portfolio .portfolio__image {
@@ -17634,9 +17655,16 @@ h2, .h2 {
 }
 
 .portfolio .portfolio__webapp {
+  margin: 0 auto;
   background-image: url("../../../assets/images/cover-webapp.png");
   background-size: cover;
   background-position: center;
+}
+
+@media (min-width: 768px) {
+  .portfolio .portfolio__webapp {
+    margin: 0;
+  }
 }
 
 .portfolio .portfolio__webapp .portfolio__button {
@@ -17644,9 +17672,16 @@ h2, .h2 {
 }
 
 .portfolio .portfolio__graphics {
+  margin: 0 auto;
   background-image: url("../../../assets/images/cover-graphics.png");
   background-size: cover;
   background-position: center;
+}
+
+@media (min-width: 768px) {
+  .portfolio .portfolio__graphics {
+    margin: 0;
+  }
 }
 
 .portfolio .portfolio__button {
@@ -17691,11 +17726,70 @@ h2, .h2 {
   background: url("../../../assets/images/graphics-banner.png");
   background-position: center;
   background-size: cover;
-  height: 480px;
+  height: 360px;
+}
+
+@media (min-width: 1200px) {
+  .graphicsBanner {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .graphicsBanner {
+    height: 480px;
+  }
 }
 
 .grid-item {
-  margin-bottom: 48px;
+  float: left;
+  margin-bottom: 10px;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .grid-item {
+    margin-bottom: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .grid-item {
+    margin-bottom: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.grid-item .cover {
+  display: none;
+}
+
+.grid-item a:hover .cover {
+  background-color: rgba(88, 85, 65, 0.7);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
 }
 
 /*# sourceMappingURL=all.css.map */
