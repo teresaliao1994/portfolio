@@ -1,15 +1,17 @@
-.font-s {
+.font-xs {
   font-size: 0.75rem; //12
   @include media-breakpoint-up(xxl) {
     font-size: 1rem; //16
   }
 }
-
-.font-m {
+.font-s {
   font-size: 0.875rem; //14
   @include media-breakpoint-up(xl) {
     font-size: 1rem; //16
   }
+}
+.font-m {
+  font-size: 1rem; //16
 }
 .font-l {
   font-size: 1.375rem; //22
@@ -31,8 +33,11 @@
 }
 
 .wrapper {
+  @include media-breakpoint-up(lg) {
+    max-width: 860px;
+  }
   @include media-breakpoint-up(xl) {
-    max-width: 990px;
+    max-width: 1040px;
   }
   @include media-breakpoint-up(xxl) {
     max-width: 1320px;

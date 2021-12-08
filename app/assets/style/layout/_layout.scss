@@ -1,7 +1,4 @@
 .nav__bar {
-  h1 {
-    line-height: 1.5;
-  }
   background-color: $primary;
   @include media-breakpoint-up(md) {
     background-color: transparent;
