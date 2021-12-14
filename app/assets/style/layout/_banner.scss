@@ -14,10 +14,11 @@
 }
 
 .title {
-  text-align: right;
   border-bottom: $primary 1px solid;
+  @include media-breakpoint-up(md) {
+    text-align: right;
+  }
 }
 .info {
-  letter-spacing: 0.15rem;
-  font-weight: 500;
+  letter-spacing: 0.05rem;
 }

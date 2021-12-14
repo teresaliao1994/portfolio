@@ -2,11 +2,61 @@
   background: url("../../../assets/images/webapp-banner.png");
   background-position: center;
   background-size: cover;
-  height: 480px;
+  height: 360px;
+  @include media-breakpoint-up(xl) {
+    height: 400px;
+  }
+  @include media-breakpoint-up(xxl) {
+    height: 480px;
+  }
 }
 
 .webapp__list {
   li {
-    margin-bottom: 96px;
+    margin-bottom: 2.5rem;
+    padding: 4px;
+    @include media-breakpoint-up(md) {
+      padding: 8px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 3rem;
+      padding: 10px;
+    }
+    @include media-breakpoint-up(xxl) {
+      padding: 12px;
+      margin-bottom: 4rem;
+    }
+    img{
+      @include media-breakpoint-up(md) {
+        height: 255px;
+      }
+      @include media-breakpoint-up(lg) {
+        height: 308px;
+      }
+      @include media-breakpoint-up(xl) {
+        height: 375px;
+      }
+      @include media-breakpoint-up(xxl) {
+        height: 480px;
+      }
+    }
+  }
+  .cover{
+    display: none;
+  }
+  a:hover{
+    .cover{
+      background-color: rgba(88, 85, 65, 0.7);
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 99;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
   }
 }

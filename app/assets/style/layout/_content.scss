@@ -1,0 +1,18 @@
+.content__wrapper{
+  @include media-breakpoint-up(md) {
+  width: 90%;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 75%;
+    }
+}
+.content__list {
+  li {
+    margin-bottom: 3rem;
+  }
+  @include media-breakpoint-up(xxl) {
+    li {
+      margin-bottom: 4rem;
+    }
+  }
+}
