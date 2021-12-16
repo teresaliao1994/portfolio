@@ -30,7 +30,10 @@ function menuScrollInit() {
 // menuScrollInit();
 window.addEventListener("scroll", menuScrollInit);
 
-
+$(document).on('click', '[data-toggle="lightbox"]', function (event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
 
 // init Masonry
 var $grid = $('.grid').masonry({
@@ -42,13 +45,6 @@ var $grid = $('.grid').masonry({
 $grid.imagesLoaded().progress(function () {
   $grid.masonry();
 });
-
-
-//Lightbox
-lightbox.option({
-  'fitImagesInViewport': true
-})
-
 
 //Aos
 AOS.init({

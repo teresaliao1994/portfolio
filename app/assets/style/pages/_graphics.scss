@@ -42,9 +42,14 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding-top: 2rem;
-      padding-bottom: 1rem;
-      padding-left: 1rem;
+      padding-top: 1.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 0.5rem;
+      @include media-breakpoint-up(md) {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+      }
     }
   }
 }
