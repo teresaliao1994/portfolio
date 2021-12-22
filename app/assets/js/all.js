@@ -41,8 +41,9 @@ window.addEventListener("scroll", menuScrollInit);
 //https://lokeshdhakar.com/projects/lightbox2/
 lightbox.option({
   'disableScrolling': true,
-  'alwaysShowNavOnTouchDevices': true,
-  'fitImagesInViewport': true
+  'fitImagesInViewport': true,
+  //'maxWidth': 300,
+  'alwaysShowNavOnTouchDevices': true
 })
 
 // init Masonry

@@ -54,10 +54,20 @@
   }
 }
 
-.modal-body{
-  padding: 0.75rem 0.75rem 0;
+.modal-content{
+ background-color: transparent;
+}
+.modal-resize{
+  width: auto;
+  @include media-breakpoint-up(md) {
+    max-width: 600px;
+  }
 }
 .modal-footer{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  padding-top: 0.15rem;
+}
+
+.lb-outerContainer {
+  //width: 300px;
+  //height: 300px;
 }
