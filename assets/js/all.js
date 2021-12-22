@@ -42,8 +42,9 @@ window.addEventListener("scroll", menuScrollInit); //ekkoLightbox
 
 lightbox.option({
   'disableScrolling': true,
-  'alwaysShowNavOnTouchDevices': true,
-  'fitImagesInViewport': true
+  'fitImagesInViewport': true,
+  //'maxWidth': 300,
+  'alwaysShowNavOnTouchDevices': true
 }); // init Masonry
 
 var $grid = $('.grid').masonry({

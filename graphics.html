@@ -11,6 +11,7 @@
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
   <!-- Lightbox -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
@@ -55,20 +56,26 @@
       <p class="subtitle font-s">PORTFOLIO</p>
       <h2>GRAPHICS</h2>
     </div>
-
+    <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-dialog modal-resize modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-body">
             <img src="./assets/images/graphics-3.png" alt="">
           </div>
-          <div class="modal-footer font-xs text-primary justify-content-between">
-            <p class="fw-bold">THE NINTH TASTE</p>
-            <p>Logo Design / 2018</p>
+          <div class="modal-footer font-xs text-white justify-content-between">
+            <div>
+              <p class="fw-bold">THE NINTH TASTE</p>
+              <p>Logo Design / 2018</p>
+            </div>
+            <span class="material-icons-round text-white font-icon" data-bs-dismiss="modal" aria-label="Close">
+              close
+            </span>
           </div>
         </div>
       </div>
     </div>
+    <!-- Content -->
     <div class="graphics__content">
       <div class="row grid g-0">
         <div class="col-6 col-md-4 col-xl-3 grid-item">
