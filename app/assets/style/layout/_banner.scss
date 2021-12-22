@@ -1,16 +1,82 @@
 .banner {
-  height: 360px;
+  margin-top: 4rem;
+  height: 240px;
+  @include media-breakpoint-up(md) {
+    margin-top: 0rem;
+    height: 280px;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 360px;
+  }
   @include media-breakpoint-up(xl) {
-    height: 500px;
+    height: 430px;
   }
   @include media-breakpoint-up(xxl) {
+    height: 520px;
+  }
+  @media (min-width: 1920px){
     height: 700px;
   }
+}
+.adBanner {
+  background: url("../../../assets/images/ad-BN.png");
+  background-position: center;
+  background-size: cover;
+}
+.amusmentparkBanner {
+  background: url("../../../assets/images/amusment-BN.png");
+  background-position: center;
+  background-size: cover;
+}
+.bannerdesignBanner {
+  background: url("../../../assets/images/bn-BN.png");
+  background-position: center;
+  background-size: cover;
+}
+.brixtonBanner {
+  background: url("../../../assets/images/brixton-BN.png");
+  background-position: center;
+  background-size: cover;
 }
 .eventBanner {
   background: url("../../../assets/images/event-BN.png");
   background-position: center;
   background-size: cover;
+}
+.interactionBanner {
+  background: url("../../../assets/images/mb-interaction-BN.png");
+  background-position: center;
+  background-size: cover;
+  @include media-breakpoint-up(md) {
+    background: url("../../../assets/images/interaction-BN.png");
+    background-position: center;
+    background-size: cover;
+  }
+}
+.landingpageBanner {
+  background: url("../../../assets/images/lp-BN.png");
+  background-position: center;
+  background-size: cover;
+}
+.lookbookBanner {
+  background: url("../../../assets/images/mb-lookbook-BN.png");
+  background-position: center;
+  background-size: cover;
+  @include media-breakpoint-up(md) {
+    background: url("../../../assets/images/lookbook-BN.png"); 
+    background-position: center;
+    background-size: cover;
+  }
+}
+.sinreBanner {
+  background: url("../../../assets/images/mb-sinre-BN.png");
+  background-position: center;
+  background-size: cover;
+  @include media-breakpoint-up(md) {
+    background: url("../../../assets/images/sinre-BN.png");
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .title {

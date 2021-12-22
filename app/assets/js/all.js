@@ -30,10 +30,20 @@ function menuScrollInit() {
 // menuScrollInit();
 window.addEventListener("scroll", menuScrollInit);
 
-$(document).on('click', '[data-toggle="lightbox"]', function (event) {
+//ekkoLightbox
+//https://ashleydw.github.io/lightbox/
+/*$(document).on('click', '[data-toggle="lightbox"]', function (event) {
   event.preventDefault();
   $(this).ekkoLightbox();
-});
+});*/
+
+//lokeshdhakarLightbox
+//https://lokeshdhakar.com/projects/lightbox2/
+lightbox.option({
+  'disableScrolling': true,
+  'alwaysShowNavOnTouchDevices': true,
+  'fitImagesInViewport': true
+})
 
 // init Masonry
 var $grid = $('.grid').masonry({
