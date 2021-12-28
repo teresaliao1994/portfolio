@@ -50,6 +50,7 @@ lightbox.option({
 var $grid = $('.grid').masonry({
   itemSelector: '.grid-item',
   percentPosition: true,
+  horizontalOrder: true
   //columnWidth: '.grid-sizer'
 });
 // layout Masonry after each image loads
