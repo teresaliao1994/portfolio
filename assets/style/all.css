@@ -17551,7 +17551,7 @@ h5, .h5 {
 }
 
 .footer {
-  background: url("../../../assets/images/footer.png");
+  background: url("../../../assets/images/footer.jpg");
   background-size: cover;
   background-position: center;
   height: 200px;
@@ -17634,37 +17634,45 @@ h5, .h5 {
 }
 
 .adBanner {
-  background: url("../../../assets/images/ad-BN.png");
+  background: url("../../../assets/images/ad-BN.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .amusmentparkBanner {
-  background: url("../../../assets/images/amusment-BN.png");
+  background: url("../../../assets/images/amusment-BN_mb.jpg");
   background-position: center;
   background-size: cover;
 }
 
+@media (min-width: 768px) {
+  .amusmentparkBanner {
+    background: url("../../../assets/images/amusment-BN.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
 .bannerdesignBanner {
-  background: url("../../../assets/images/bn-BN.png");
+  background: url("../../../assets/images/bn-BN.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .brixtonBanner {
-  background: url("../../../assets/images/brixton-BN.png");
+  background: url("../../../assets/images/brixton-BN.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .eventBanner {
-  background: url("../../../assets/images/event-BN.png");
+  background: url("../../../assets/images/event-BN.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .interactionBanner {
-  background: url("../../../assets/images/mb-interaction-BN.png");
+  background: url("../../../assets/images/interaction-BN_mb.png");
   background-position: center;
   background-size: cover;
 }
@@ -17678,34 +17686,34 @@ h5, .h5 {
 }
 
 .landingpageBanner {
-  background: url("../../../assets/images/lp-BN.png");
+  background: url("../../../assets/images/lp-BN.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .lookbookBanner {
-  background: url("../../../assets/images/mb-lookbook-BN.png");
+  background: url("../../../assets/images/lookbook-BN_mb.jpg");
   background-position: center;
   background-size: cover;
 }
 
 @media (min-width: 768px) {
   .lookbookBanner {
-    background: url("../../../assets/images/lookbook-BN.png");
+    background: url("../../../assets/images/lookbook-BN.jpg");
     background-position: center;
     background-size: cover;
   }
 }
 
 .sinreBanner {
-  background: url("../../../assets/images/mb-sinre-BN.png");
+  background: url("../../../assets/images/sinre-BN_mb.jpg");
   background-position: center;
   background-size: cover;
 }
 
 @media (min-width: 768px) {
   .sinreBanner {
-    background: url("../../../assets/images/sinre-BN.png");
+    background: url("../../../assets/images/sinre-BN.jpg");
     background-position: center;
     background-size: cover;
   }
@@ -17828,7 +17836,7 @@ h5, .h5 {
 }
 
 .indexBanner {
-  background: url("../../../assets/images/home-bn.png");
+  background: url("../../../assets/images/home-bn.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
