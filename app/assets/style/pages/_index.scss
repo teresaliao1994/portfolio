@@ -1,9 +1,10 @@
 .indexBanner {
-  background: url("../../../assets/images/home-bn.jpg");
+  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/home-bn.jpg");
   //background: url("../../../assets/images/ricardo-gomez-angel-UrOZTfXT0h0-unsplash\ \(1\).jpeg");
   background-position: center;
   background-size: cover;
   height: 100vh;
+  background-attachment:fixed;
 }
 
 .intro__content {
@@ -11,6 +12,9 @@
   margin: 0 auto;
   font-family: "Italiana", serif;
   text-align: center;
+  .underline{
+    text-decoration: underline;
+  }
 }
 
 .portfolio {

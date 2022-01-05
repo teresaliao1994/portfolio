@@ -39,7 +39,7 @@
 }
 
 .footer {
-  background: url("../../../assets/images/footer.jpg");
+  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/footer.jpg");
   background-size: cover;
   background-position: center;
   height: 200px;
@@ -52,6 +52,14 @@
   }
   .footer__list {
     width: fit-content;
+    :nth-child(2){
+      margin-bottom: 0.25rem;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+        border-left: 1px solid $dark;
+        border-right: 1px solid $dark;
+      }
+    }
   }
   .footer__link {
     display: block;
@@ -59,14 +67,6 @@
     color: $dark;
     &:hover {
       color: $white;
-    }
-  }
-  .mail {
-    margin-bottom: 0.25rem;
-    @include media-breakpoint-up(md) {
-      margin-bottom: 0;
-      border-left: 1px solid $dark;
-      border-right: 1px solid $dark;
     }
   }
 }
