@@ -17551,7 +17551,7 @@ h5, .h5 {
 }
 
 .footer {
-  background: url("../../../assets/images/footer.jpg");
+  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/footer.jpg");
   background-size: cover;
   background-position: center;
   height: 200px;
@@ -17575,6 +17575,18 @@ h5, .h5 {
   width: fit-content;
 }
 
+.footer .footer__list :nth-child(2) {
+  margin-bottom: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .footer .footer__list :nth-child(2) {
+    margin-bottom: 0;
+    border-left: 1px solid #1a1a1a;
+    border-right: 1px solid #1a1a1a;
+  }
+}
+
 .footer .footer__link {
   display: block;
   letter-spacing: 0.15em;
@@ -17583,18 +17595,6 @@ h5, .h5 {
 
 .footer .footer__link:hover {
   color: #fff;
-}
-
-.footer .mail {
-  margin-bottom: 0.25rem;
-}
-
-@media (min-width: 768px) {
-  .footer .mail {
-    margin-bottom: 0;
-    border-left: 1px solid #1a1a1a;
-    border-right: 1px solid #1a1a1a;
-  }
 }
 
 .banner {
@@ -17836,10 +17836,11 @@ h5, .h5 {
 }
 
 .indexBanner {
-  background: url("../../../assets/images/home-bn.jpg");
+  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/home-bn.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 .intro__content {
@@ -17847,6 +17848,10 @@ h5, .h5 {
   margin: 0 auto;
   font-family: "Italiana", serif;
   text-align: center;
+}
+
+.intro__content .underline {
+  text-decoration: underline;
 }
 
 .portfolio .portfolio__content {
@@ -17955,7 +17960,7 @@ h5, .h5 {
 }
 
 .webappBanner {
-  background: url("../../../assets/images/webapp-banner.png");
+  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/webapp-banner.png");
   background-position: center;
   background-size: cover;
   height: 360px;
@@ -18048,7 +18053,7 @@ h5, .h5 {
 }
 
 .graphicsBanner {
-  background: url("../../../assets/images/graphics-banner.png");
+  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/graphics-banner.png");
   background-position: center;
   background-size: cover;
   height: 360px;
