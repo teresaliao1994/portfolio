@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Italiana&family=Spartan:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 /*!
@@ -17499,6 +17500,14 @@ h5, .h5 {
   }
 }
 
+.nav__bar h1, .nav__bar .h1 {
+  color: #1a1a1a;
+}
+
+.nav__bar h1:hover, .nav__bar .h1:hover {
+  color: #fff;
+}
+
 .nav__bar--active {
   background-color: #b39c7a;
 }
@@ -17559,7 +17568,7 @@ h5, .h5 {
 
 @media (min-width: 1200px) {
   .footer {
-    height: 300px;
+    height: 400px;
   }
 }
 
@@ -17836,10 +17845,60 @@ h5, .h5 {
 }
 
 .indexBanner {
-  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/home-bn.jpg");
+  background: url("../../../assets/images/banner-index.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
+  background-attachment: fixed;
+}
+
+@-webkit-keyframes example {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    left: 30px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    left: 30px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.example {
+  position: relative;
+  /*  要執行的 animation 名稱   */
+  -webkit-animation-name: example;
+          animation-name: example;
+  /*  執行過程秒數  */
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.intro {
+  background-position: center;
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -17904,7 +17963,7 @@ h5, .h5 {
 
 .portfolio .portfolio__webapp {
   margin: 0 auto;
-  background-image: url("../../../assets/images/cover-webapp.png");
+  background-image: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/cover-webapp.png");
   background-size: cover;
   background-position: center;
 }
@@ -17921,7 +17980,7 @@ h5, .h5 {
 
 .portfolio .portfolio__graphics {
   margin: 0 auto;
-  background-image: url("../../../assets/images/cover-graphics.png");
+  background-image: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/cover-graphics.png");
   background-size: cover;
   background-position: center;
 }
@@ -17960,7 +18019,7 @@ h5, .h5 {
 }
 
 .webappBanner {
-  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/webapp-banner.png");
+  background: url("../../../assets/images/banner-bg-1.jpg");
   background-position: center;
   background-size: cover;
   height: 360px;
@@ -17979,27 +18038,27 @@ h5, .h5 {
 }
 
 .webapp__list li {
-  margin-bottom: 2.5rem;
-  padding: 4px;
+  margin-bottom: 3rem;
+  padding: 0 4px;
 }
 
 @media (min-width: 768px) {
   .webapp__list li {
-    padding: 8px;
+    padding: 0 8px;
   }
 }
 
 @media (min-width: 1200px) {
   .webapp__list li {
-    margin-bottom: 3rem;
-    padding: 10px;
+    margin-bottom: 4rem;
+    padding: 0 10px;
   }
 }
 
 @media (min-width: 1400px) {
   .webapp__list li {
-    padding: 12px;
-    margin-bottom: 4rem;
+    padding: 0 12px;
+    margin-bottom: 5rem;
   }
 }
 
@@ -18053,7 +18112,7 @@ h5, .h5 {
 }
 
 .graphicsBanner {
-  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/graphics-banner.png");
+  background: url("../../../assets/images/banner-bg-2.jpg");
   background-position: center;
   background-size: cover;
   height: 360px;

@@ -15,7 +15,7 @@ function menuScrollInit() {
       target[0].classList.remove("nav__bar--active");
     }
   } else if (screen.width > 1200) {
-    if (scrollY >= 650) {
+    if (scrollY >= 500) {
       target[0].classList.add("nav__bar--active");
     } else {
       target[0].classList.remove("nav__bar--active");
@@ -60,6 +60,6 @@ $grid.imagesLoaded().progress(function () {
 
 AOS.init({
   once: true,
-  duration: 1000
+  duration: 800
 });
 //# sourceMappingURL=all.js.map
