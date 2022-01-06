@@ -1,12 +1,37 @@
 .indexBanner {
-  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/home-bn.jpg");
-  //background: url("../../../assets/images/ricardo-gomez-angel-UrOZTfXT0h0-unsplash\ \(1\).jpeg");
+  //background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/banner-index.jpg");
+  background: url("../../../assets/images/banner-index.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
   background-attachment:fixed;
 }
 
+@keyframes example {
+  0%{left:0px; top:0px;}
+  50%{left:30px; top:0px;}
+  100%{left:0px; top:0px;}
+}
+
+.example{
+  position: relative;
+  /*  要執行的 animation 名稱   */
+  animation-name: example;
+  /*  執行過程秒數  */
+  animation-duration: 5s; 
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.block{
+
+}
+.intro{
+  //background: url("../../../assets/images/banner-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment:fixed;
+}
 .intro__content {
   max-width: 960px;
   margin: 0 auto;
@@ -51,7 +76,7 @@
   }
   .portfolio__webapp {
     margin: 0 auto;
-    background-image: url("../../../assets/images/cover-webapp.png");
+    background-image: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/cover-webapp.png");
     background-size: cover;
     background-position: center;
     @include media-breakpoint-up(md) {
@@ -63,7 +88,7 @@
   }
   .portfolio__graphics {
     margin: 0 auto;
-    background-image: url("../../../assets/images/cover-graphics.png");
+    background-image: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/cover-graphics.png");
     background-size: cover;
     background-position: center;
     @include media-breakpoint-up(md) {

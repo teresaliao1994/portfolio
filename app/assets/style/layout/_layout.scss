@@ -3,6 +3,12 @@
   @include media-breakpoint-up(md) {
     background-color: transparent;
   }
+  h1{
+    color: $dark;
+    &:hover {
+      color: $white;
+    }
+  }
 }
 .nav__bar--active {
   background-color: $primary;
@@ -45,7 +51,7 @@
   height: 200px;
 
   @include media-breakpoint-up(xl) {
-    height: 300px;
+    height: 400px;
   }
   @include media-breakpoint-up(xxl) {
     height: 600px;
