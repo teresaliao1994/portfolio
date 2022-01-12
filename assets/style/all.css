@@ -17643,86 +17643,86 @@ h5, .h5 {
 }
 
 .adBanner {
-  background: url("../../../assets/images/ad-BN.jpg");
+  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/ad-BN.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .amusmentparkBanner {
-  background: url("../../../assets/images/amusment-BN_mb.jpg");
+  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/amusment-BN_mb.jpg");
   background-position: center;
   background-size: cover;
 }
 
 @media (min-width: 768px) {
   .amusmentparkBanner {
-    background: url("../../../assets/images/amusment-BN.jpg");
+    background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/amusment-BN.jpg");
     background-position: center;
     background-size: cover;
   }
 }
 
 .bannerdesignBanner {
-  background: url("../../../assets/images/bn-BN.jpg");
+  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/bn-BN.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .brixtonBanner {
-  background: url("../../../assets/images/brixton-BN.jpg");
+  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/brixton-BN.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .eventBanner {
-  background: url("../../../assets/images/event-BN.jpg");
+  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/event-BN.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .interactionBanner {
-  background: url("../../../assets/images/interaction-BN_mb.png");
+  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/interaction-BN_mb.png");
   background-position: center;
   background-size: cover;
 }
 
 @media (min-width: 768px) {
   .interactionBanner {
-    background: url("../../../assets/images/interaction-BN.png");
+    background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/interaction-BN.png");
     background-position: center;
     background-size: cover;
   }
 }
 
 .landingpageBanner {
-  background: url("../../../assets/images/lp-BN.jpg");
+  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/lp-BN.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .lookbookBanner {
-  background: url("../../../assets/images/lookbook-BN_mb.jpg");
+  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/lookbook-BN_mb.jpg");
   background-position: center;
   background-size: cover;
 }
 
 @media (min-width: 768px) {
   .lookbookBanner {
-    background: url("../../../assets/images/lookbook-BN.jpg");
+    background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/lookbook-BN.jpg");
     background-position: center;
     background-size: cover;
   }
 }
 
 .sinreBanner {
-  background: url("../../../assets/images/sinre-BN_mb.jpg");
+  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/sinre-BN_mb.jpg");
   background-position: center;
   background-size: cover;
 }
 
 @media (min-width: 768px) {
   .sinreBanner {
-    background: url("../../../assets/images/sinre-BN.jpg");
+    background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/sinre-BN.jpg");
     background-position: center;
     background-size: cover;
   }
@@ -17849,7 +17849,6 @@ h5, .h5 {
   background-position: center;
   background-size: cover;
   height: 100vh;
-  background-attachment: fixed;
 }
 
 @-webkit-keyframes example {
