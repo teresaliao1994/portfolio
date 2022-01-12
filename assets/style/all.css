@@ -17845,7 +17845,7 @@ h5, .h5 {
 }
 
 .indexBanner {
-  background: url("../../../assets/images/banner-index.jpg");
+  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/banner-index.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -18019,7 +18019,7 @@ h5, .h5 {
 }
 
 .webappBanner {
-  background: url("../../../assets/images/banner-bg-1.jpg");
+  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/banner-bg-1.jpg");
   background-position: center;
   background-size: cover;
   height: 360px;
@@ -18112,7 +18112,7 @@ h5, .h5 {
 }
 
 .graphicsBanner {
-  background: url("../../../assets/images/banner-bg-2.jpg");
+  background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/banner-bg-2.jpg");
   background-position: center;
   background-size: cover;
   height: 360px;
