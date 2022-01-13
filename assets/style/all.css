@@ -17439,13 +17439,7 @@ h5, .h5 {
 }
 
 .font-l {
-  font-size: 1.375rem;
-}
-
-@media (min-width: 768px) {
-  .font-l {
-    font-size: 2rem;
-  }
+  font-size: 2rem;
 }
 
 @media (min-width: 1200px) {
@@ -17564,6 +17558,12 @@ h5, .h5 {
   background-size: cover;
   background-position: center;
   height: 200px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    height: 300px;
+  }
 }
 
 @media (min-width: 1200px) {
