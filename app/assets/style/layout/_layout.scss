@@ -49,7 +49,9 @@
   background-size: cover;
   background-position: center;
   height: 200px;
-
+  @include media-breakpoint-up(md) {
+    height: 300px;
+  }
   @include media-breakpoint-up(xl) {
     height: 400px;
   }
