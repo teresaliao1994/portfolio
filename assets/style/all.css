@@ -17848,7 +17848,6 @@ h5, .h5 {
   background: url("https://raw.githubusercontent.com/teresaliao1994/portfolio/main/app/assets/images/banner-index.jpg");
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   height: 100vh;
 }
 
