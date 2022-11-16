@@ -4,10 +4,8 @@ $('.menu-icon').click(function (e) {
   e.preventDefault();
   $('.menu__list').toggleClass('active');
 });
-
 function menuScrollInit() {
   var target = document.getElementsByClassName("nav__bar");
-
   if (screen.width > 1400) {
     if (scrollY >= 700) {
       target[0].classList.add("nav__bar--active");
@@ -27,37 +25,39 @@ function menuScrollInit() {
       target[0].classList.remove("nav__bar--active");
     }
   }
-} // menuScrollInit();
+}
+// menuScrollInit();
+window.addEventListener("scroll", menuScrollInit);
 
-
-window.addEventListener("scroll", menuScrollInit); //ekkoLightbox
+//ekkoLightbox
 //https://ashleydw.github.io/lightbox/
-
 /*$(document).on('click', '[data-toggle="lightbox"]', function (event) {
   event.preventDefault();
   $(this).ekkoLightbox();
 });*/
+
 //lokeshdhakarLightbox
 //https://lokeshdhakar.com/projects/lightbox2/
-
 lightbox.option({
   'disableScrolling': true,
   'fitImagesInViewport': true,
   //'maxWidth': 300,
   'alwaysShowNavOnTouchDevices': true
-}); // init Masonry
+});
 
+// init Masonry
 var $grid = $('.grid').masonry({
   itemSelector: '.grid-item',
   percentPosition: true,
-  horizontalOrder: true //columnWidth: '.grid-sizer'
-
-}); // layout Masonry after each image loads
-
+  horizontalOrder: true
+  //columnWidth: '.grid-sizer'
+});
+// layout Masonry after each image loads
 $grid.imagesLoaded().progress(function () {
   $grid.masonry();
-}); //Aos
+});
 
+//Aos
 AOS.init({
   once: true,
   duration: 800
